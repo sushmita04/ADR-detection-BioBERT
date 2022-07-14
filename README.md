@@ -1,5 +1,8 @@
 # ADR-detection-BioBERT
 
+We analyse text drugs’ reviews of six drugs, namely, Acetaminophen, Naproxen, Sumatriptan, Carbamazepine, Lamotrigine and Levetiracetam, where the former three
+are used for the treatment of migraine while the latter three are that of seizure, and their various types. We present a computational framework that has been built using transfer learning techniques on Bio-BERT pre-trained model. Bio-BERT is a model that is trained on several biomedical and english literature text. It evolves from the BERT model which was only trained on english literature texts. We further fine-tune our model to analyse the transfer learning capacities and efficiencies over cross-domain drugs, on different combinations of the dataset. Finally, we report the ADRs detected by our model, the various ADRs that are detected but not in the SIDER, analyse how and why severity is detected by our model in certain cases, and analyse the top 10 ADRs detected by our model for each drug as a proof of correctness task with respect to websites like https://pubmed.ncbi.nlm.nih.gov/ and https://medlineplus.gov/.
+
 The above files are designed to be run in Google Colab.
 Please follow the following steps to execute the programs:
 1. Upload the contents of one of the folders present in this folder to Google Drive.
